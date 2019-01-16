@@ -6,7 +6,7 @@ $("#add-btn").on("click", function(event) {
   event.preventDefault();
 
   // make a newCharacter obj
-  var newPet = {
+  var foundPet = {
     // name from name input
     name: $("#name").val().trim(),
     // role from role input
@@ -22,7 +22,7 @@ $("#add-btn").on("click", function(event) {
   };
 
   // send an AJAX POST-request with jQuery
-  $.post("/api/new", newPet)
+  $.post("/api/new", foundPet)
     // on success, run this callback
     .then(function(data) {
       // log the data we found

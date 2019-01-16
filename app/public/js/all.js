@@ -20,12 +20,12 @@ $.get("/api", function(data) {
     // make the name an h2,
     $("#pet-well-" + i).append("<h2>Name:" + data[i].name + "</h2>");
     // the role an h3,
-    $("#pet-well-" + i).append("<h3>Number: " + data[i].number + "</h4>");
+    $("#pet-well-" + i).append("<h3>Number: " + data[i].number + "</h3>");
     // the age an h3,
-    $("#pet-well-" + i).append("<h3>petType: " + data[i].pettype + "</h4>");
+    $("#pet-well-" + i).append("<h3>petType: " + data[i].petType + "</h3>");
     // and the forcepoints an h3.
-    $("#pet-well-" + i).append("<h3>petColor: " + data[i].petcolor + "</h4>");
+    $("#pet-well-" + i).append("<h3>petColor: " + data[i].petColor + "</h3>");
 
-    $("#pet-well-" + i).append("<h3>petSize: " + data[i].petsize + "</h4>");
+    $("#pet-well-" + i).append("<h3>petSize: " + data[i].petSize + "</h3>");
   }
 });
